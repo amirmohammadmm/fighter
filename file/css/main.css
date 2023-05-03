@@ -87,58 +87,86 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?48z4p3");
+  src: url("../fonts/icomoon.eot?48z4p3#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?48z4p3") format("truetype"),
+    url("../fonts/icomoon.woff?48z4p3") format("woff"),
+    url("../fonts/icomoon.svg?48z4p3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-   @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?48z4p3');
-    src:  url('../fonts/icomoon.eot?48z4p3#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?48z4p3') format('truetype'),
-      url('../fonts/icomoon.woff?48z4p3') format('woff'),
-      url('../fonts/icomoon.svg?48z4p3#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quill:before {
+  content: "\e907";
+}
+.icon-headphones:before {
+  content: "\e910";
+}
+
+/*  */
+
+@font-face {
+  font-family: amir;
+  src: url() format();
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: greenyellow;
   }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 992px) {
+  body {
+    background-color: orange;
   }
-  
-  .icon-quill:before {
-    content: "\e907";
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
   }
-  .icon-headphones:before {
-    content: "\e910";
-  }
+}
+
+
+@print{
   
 
 
-
-   /*  */
-
-
-
-   @font-face{
-    font-family: amir;
-    src: url() format();
-   }
-
-   div{
-   }
+  body{
+    background-color:red;
+  }
 
 
+}
+
+
+.pp{
+  width: 300px;
+  height: 300px;
+  border: 3px solid #000000bd;
+  margin: 50px;
+  box-shadow: inset 0px 2px 20px 0px #0c0c0ce8 ;
+  border-radius: 10px;
+}
 
 
 
@@ -322,4 +350,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
