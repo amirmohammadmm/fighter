@@ -92,6 +92,15 @@ textarea {
 
 
 
+input{
+  display:block;
+}
+input::placeholder{
+  color:#ff0000;
+}
+input[type="number"]{
+  color:red;
+}
 
 
 
@@ -101,7 +110,6 @@ textarea {
 
 
 
-   
 
 
 
