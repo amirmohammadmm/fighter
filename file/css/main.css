@@ -87,6 +87,28 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
+
+   
+   div.test{
+    width:300px;
+    height:400px;
+    border:3px solid red;
+    margin:50px;
+    background-color:red;
+    background-image: url(../img/3434881.jpg);
+    background-size:cover ;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background:red url(../img/3434881.jpg) no-repeat fixed center;
+   }
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
